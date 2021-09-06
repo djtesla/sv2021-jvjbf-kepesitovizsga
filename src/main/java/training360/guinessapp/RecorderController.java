@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("/api")
+@RequestMapping("/api/recorders")
 public class RecorderController {
 
     private RecorderService recorderService;
@@ -27,14 +27,14 @@ public class RecorderController {
 
 
 
-    @PostMapping("/recorders")
+    @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public RecorderDto createRecorder(@RequestBody @Valid RecorderCreateCommand command) {
         return recorderService.createRecorder(command);
     }
 
 
-    @GetMapping("/recorder")
+    @GetMapping
     public List<RecorderShortDto> listRecordersByConditions() {
         return recorderService.listRecordersByConditions();
     }

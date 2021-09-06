@@ -8,9 +8,9 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.test.context.jdbc.Sql;
-//import training360.guinessapp.dto.RecorderCreateCommand;
-//import training360.guinessapp.dto.RecorderDto;
-//import training360.guinessapp.dto.RecorderShortDto;
+import training360.guinessapp.dto.RecorderCreateCommand;
+import training360.guinessapp.dto.RecorderDto;
+import training360.guinessapp.dto.RecorderShortDto;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -21,7 +21,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Sql(statements = {"delete from world_record", "delete from recorder"})
 public class RecordersListIT {
 
-    /*
+
 
     @Autowired
     TestRestTemplate template;
@@ -47,5 +47,5 @@ public class RecordersListIT {
                 .containsExactly("Glen", "Ben");
     }
 
-*/
+
 }
