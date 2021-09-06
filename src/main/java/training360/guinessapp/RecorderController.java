@@ -35,7 +35,7 @@ public class RecorderController {
 
 
     @GetMapping("/recorder")
-    public RecorderShortDto listRecordersByConditions() {
+    public List<RecorderShortDto> listRecordersByConditions() {
         return recorderService.listRecordersByConditions();
     }
 

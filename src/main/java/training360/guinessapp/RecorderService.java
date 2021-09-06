@@ -24,6 +24,6 @@ public class RecorderService {
     }
 
     public List<RecorderShortDto> listRecordersByConditions() {
-        recorderRepository.listRecordersByConditions();
+        return recorderRepository.listRecordersByConditions();
     }
 }
