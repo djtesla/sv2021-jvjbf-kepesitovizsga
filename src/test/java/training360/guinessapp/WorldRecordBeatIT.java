@@ -15,7 +15,7 @@ import org.springframework.test.context.jdbc.Sql;
 import org.springframework.test.web.servlet.MockMvc;
 import org.zalando.problem.Problem;
 import org.zalando.problem.Status;
-//import training360.guinessapp.dto.*;
+import training360.guinessapp.dto.*;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -32,7 +32,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @Sql(statements = {"delete from world_record", "delete from recorder"})
 public class WorldRecordBeatIT {
 
-    /*
+
 
     @Autowired
     TestRestTemplate template;
@@ -115,6 +115,6 @@ public class WorldRecordBeatIT {
     }
 
 
-     */
+
 
 }

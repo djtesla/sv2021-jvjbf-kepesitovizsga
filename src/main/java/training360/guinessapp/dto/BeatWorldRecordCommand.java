@@ -18,5 +18,8 @@ public class BeatWorldRecordCommand {
     @NotNull
     private double newValue;
 
-
+    public BeatWorldRecordCommand(Long recorderId, double newValue) {
+        this.recorderId = recorderId;
+        this.newValue = newValue;
+    }
 }
